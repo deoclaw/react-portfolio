@@ -14,6 +14,7 @@ export default function Portfolio() {
 					codeURL={project.codeURL}
 					liveURL={project.liveURL}
 					lang={project.lang}
+					display="none"
 				/>
 			))}
 		</>

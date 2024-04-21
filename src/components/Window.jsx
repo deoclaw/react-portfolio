@@ -6,17 +6,24 @@ export default function Window({
 	codeURL,
 	liveURL,
 	lang,
+	display,
 }) {
 	function hideWindow(id) {
 		const win = document.getElementById(`proj${id}`);
 		win.style.display = "none";
 	}
 
+	// could this become a context? [isShown, setShow] and then...get the id of whatever we're clicking on? and then call it here AND in my icons -- which i need to make...and maybe store icon data in the json? or do a check -- if lang is x show y else...or i can shove in the json
+	function showWindow(id) {
+		const win = document.getElementById(`proj${id}`);
+		win.style.display = "block";
+	}
+
 	return (
 		<>
 			<div
 				className="window"
-				style={{ maxWidth: "700px", overflow: "hidden" }}
+				style={{ maxWidth: "700px", overflow: "hidden", display: display }}
 				id={`proj${id}`}
 			>
 				<div className="title-bar" style={{ zIndex: "1" }}>

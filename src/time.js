@@ -1,14 +1,14 @@
 // creates clock
 
-let time = document.querySelector(".time");
-time.textContent = new Intl.DateTimeFormat("en-US", {
+let clock = document.querySelector(".clock");
+clock.textContent = new Intl.DateTimeFormat("en-US", {
 	hour: "numeric",
 	minute: "numeric",
 	hour12: true,
 }).format(new Date());
 
 const setTime = setInterval(() => {
-	time.textContent = new Intl.DateTimeFormat("en-US", {
+	clock.textContent = new Intl.DateTimeFormat("en-US", {
 		hour: "numeric",
 		minute: "numeric",
 		hour12: true,
