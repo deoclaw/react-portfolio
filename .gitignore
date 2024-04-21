@@ -1,5 +1,5 @@
 .gitignore
-
+.eslintrc.cjs
 # Logs
 logs
 *.log
