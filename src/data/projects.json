@@ -1,9 +1,9 @@
 [
 	{
 		"id": 1,
-		"title": "Grid Demo",
+		"title": "React Portfolio",
 		"image": null,
-		"desc": "Site to demonstrate using CSS Grid. Made for my fundamental web development class to help demonstrate for students ",
+		"desc": "A portfolio website done in React. Themed to look like Windows XP, this site features icons that when clicked pop up windows with a description, links to code, and even live previews. You're on it right now!",
 		"codeURL": "https://github.com/deoclaw/grid-demo",
 		"liveURL": null,
 		"lang": "HTML/CSS"
@@ -16,5 +16,14 @@
 		"codeURL": "https://github.com/deoclaw/gdbkdatagen",
 		"liveURL": null,
 		"lang": "Python"
+	},
+	{
+		"id": 3,
+		"title": "Grid Demo",
+		"image": null,
+		"desc": "Site to demonstrate using CSS Grid. Made for my fundamental web development class to help demonstrate for students ",
+		"codeURL": "https://github.com/deoclaw/grid-demo",
+		"liveURL": null,
+		"lang": "HTML/CSS"
 	}
 ]

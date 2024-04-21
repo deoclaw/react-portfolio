@@ -6,6 +6,14 @@
 	padding: 2rem;
 }
 
+body {
+	margin: 0 auto;
+	min-width: 320px;
+	min-height: 100vh;
+	background-image: url("/Msft_Nostalgia_Landscape.jpg");
+	overflow: hidden;
+}
+
 /* change this to the window -- we'll make a component no worries */
 /* #root > * {
 	margin: 1rem auto;
@@ -14,24 +22,30 @@
 .window {
 	margin: 4rem auto;
 	font-size: medium;
+	max-height: 90vh;
 }
 
 .title-bar-text {
 	font-family: "Trebuchet MS", "Allerta", sans-serif;
 	font-size: medium;
+	max-width: 250px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 h4 {
-	margin: 0.5rem;
+	margin: 0.5rem 1rem;
 }
 
 p {
 	/* font-size: medium; */
-	margin: 0.5rem;
+	margin: 0 1rem;
 }
 
 .window-body {
 	margin: 0;
+	scrollbar-width: 50px;
 }
 
 .window-body .field-row {

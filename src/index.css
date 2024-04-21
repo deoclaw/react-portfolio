@@ -1,8 +1,73 @@
 /* @import url("https://unpkg.com/xp.css"); */
 @import url("https://unpkg.com/xp.css");
 
-body {
+/* body {
 	margin: 0 auto;
 	min-width: 320px;
 	min-height: 100vh;
+} */
+
+/*  inspo from faisalAkhtar at github*/
+footer {
+	background-color: #245edc;
+	background: linear-gradient(
+			to bottom,
+			#245edc 0%,
+			#3f8cf3 9%,
+			#245edc 18%,
+			#245edc 92%,
+			#1941a5 100%
+		)
+		center/cover no-repeat;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 32px;
+}
+
+.start-button {
+	color: white;
+	height: 100%;
+	float: left;
+	font-size: 22px;
+	line-height: 22px;
+	font-weight: bold;
+	font-style: italic;
+	background: radial-gradient(circle, #5eac56 0%, #3c873c 100%) center/cover
+		no-repeat;
+	box-shadow: 0px 5px 10px #79ce71 inset, 4px 0 8px #3f8cf3;
+	padding: 2px 25px 6px 10px;
+	text-shadow: 1px 1px 3px #222;
+	border-radius: 0px 8px 8px 0px;
+	margin-right: 16px;
+}
+.start-button img {
+	height: 20px;
+	filter: drop-shadow(1px 1px 1px #222);
+	transform: translateY(4px);
+}
+
+.time {
+	color: white;
+	height: 100%;
+	float: right;
+	font-family: calibri, monospace;
+	font-size: 14px;
+	line-height: 14px;
+	background: linear-gradient(
+			to bottom,
+			#1290e9 0%,
+			#19b9f3 9%,
+			#1290e9 18%,
+			#1290e9 92%,
+			#1941a5 100%
+		)
+		center/cover no-repeat;
+	box-shadow: 0px 5px 10px #14a5f0 inset, 0px 5px 10px #333333;
+	padding: 9px 15px 9px 25px;
+	border-left: 1px solid #092e51;
+	text-shadow: 1px 1px 2px #222;
+	cursor: pointer;
+	text-transform: uppercase;
 }

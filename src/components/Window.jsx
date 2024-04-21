@@ -7,37 +7,58 @@ export default function Window({
 	liveURL,
 	lang,
 }) {
+	function hideWindow(id) {
+		const win = document.getElementById(`proj${id}`);
+		win.style.display = "none";
+	}
+
 	return (
 		<>
-			<div className="window" style={{ maxWidth: "700px" }}>
-				<div className="title-bar">
+			<div
+				className="window"
+				style={{ maxWidth: "700px", overflow: "hidden" }}
+				id={`proj${id}`}
+			>
+				<div className="title-bar" style={{ zIndex: "1" }}>
 					<div className="title-bar-text">{title}</div>
 					<div className="title-bar-controls">
-						<button aria-label="Minimize"></button>
-						<button aria-label="Maximize"></button>
-						<button aria-label="Close" style={{ cursor: "pointer" }}></button>
-						{/* will make close button have onclick event */}
+						<button disabled aria-label="Minimize"></button>
+						<button disabled aria-label="Maximize"></button>
+						<button
+							onClick={() => hideWindow(id)}
+							aria-label="Close"
+							style={{ cursor: "pointer" }}
+						></button>
 					</div>
 				</div>
-				<div className="window-body">
-					<h4>{title}</h4>
-					<p>{desc}</p>
-					<section className="field-row" style={{ justifyContent: "center" }}>
-						{codeURL === null ? (
-							<button disabled={true}>Code</button>
-						) : (
-							<button>Code</button>
-						)}
-						{liveURL === null ? (
-							<button disabled={true}>Preview</button>
-						) : (
-							<button>Preview</button>
-						)}
-					</section>
-					<div className="status-bar">
-						<p className="status-bar-field">Press F1 for help</p>
-						<p className="status-bar-field">Slide 1</p>
-						<p className="status-bar-field">CPU Usage: 14%</p>
+				<div
+					className="window-body"
+					style={{ maxHeight: "700px", overflowY: "auto" }}
+				>
+					<div className="window-wrapper">
+						<h4>{title}</h4>
+
+						<p>{desc}</p>
+
+						<section className="field-row" style={{ justifyContent: "center" }}>
+							{codeURL === null ? (
+								<button disabled={true}>Code</button>
+							) : (
+								<button>Code</button>
+							)}
+							{liveURL === null ? (
+								<button disabled={true}>Preview</button>
+							) : (
+								<button>Preview</button>
+							)}
+						</section>
+						<div className="status-bar">
+							<p className="status-bar-field">Press F1 for help</p>
+							<p className="status-bar-field">Language: {lang}</p>
+							<p className="status-bar-field">
+								CPU Usage: {Math.ceil(Math.random() * id * 10)}%
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
