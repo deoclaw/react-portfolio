@@ -6,7 +6,8 @@
 		"desc": "A portfolio website done in React. Themed to look like Windows XP, this site features icons that when clicked pop up windows with a description, links to code, and even live previews. You're on it right now!",
 		"codeURL": "https://github.com/deoclaw/grid-demo",
 		"liveURL": null,
-		"lang": "HTML/CSS"
+		"lang": "HTML/CSS",
+		"icon": "/emblem-web.png"
 	},
 	{
 		"id": 2,
@@ -15,7 +16,8 @@
 		"desc": "This program prints out a number of fake names and fake numeric grades to create a fake gradebook to automate fake data for an assignment. Runs on command line.",
 		"codeURL": "https://github.com/deoclaw/gdbkdatagen",
 		"liveURL": null,
-		"lang": "Python"
+		"lang": "Python",
+		"icon": "/python.png"
 	},
 	{
 		"id": 3,
@@ -24,6 +26,7 @@
 		"desc": "Site to demonstrate using CSS Grid. Made for my fundamental web development class to help demonstrate for students ",
 		"codeURL": "https://github.com/deoclaw/grid-demo",
 		"liveURL": null,
-		"lang": "HTML/CSS"
+		"lang": "HTML/CSS",
+		"icon": "/emblem-web.png"
 	}
 ]

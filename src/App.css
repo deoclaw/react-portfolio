@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Allerta&display=swap");
 
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
 #root {
 	max-width: 1280px;
 	margin: 0 auto;
@@ -63,4 +69,24 @@ button {
 
 button:disabled {
 	cursor: not-allowed;
+}
+
+#portfolio-container {
+	display: grid;
+	grid-template-columns: min-content auto;
+	max-height: 90vh;
+}
+
+#icon-container {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	align-items: center;
+	text-align: center;
+}
+
+.winicon figcaption {
+	margin: 0 auto 10px auto;
+	font-size: 1rem;
 }
