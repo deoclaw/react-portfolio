@@ -1,1 +1,52 @@
-@import url("https://unpkg.com/xp.css");
+@import url("https://fonts.googleapis.com/css2?family=Allerta&display=swap");
+
+#root {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+/* change this to the window -- we'll make a component no worries */
+/* #root > * {
+	margin: 1rem auto;
+} */
+
+.window {
+	margin: 4rem auto;
+	font-size: medium;
+}
+
+.title-bar-text {
+	font-family: "Trebuchet MS", "Allerta", sans-serif;
+	font-size: medium;
+}
+
+h4 {
+	margin: 0.5rem;
+}
+
+p {
+	/* font-size: medium; */
+	margin: 0.5rem;
+}
+
+.window-body {
+	margin: 0;
+}
+
+.window-body .field-row {
+	margin: 0.5rem 0;
+}
+
+.window-body button {
+	font-size: medium;
+	margin: 1rem 0.25rem;
+}
+
+button {
+	cursor: pointer;
+}
+
+button:disabled {
+	cursor: not-allowed;
+}

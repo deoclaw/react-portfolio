@@ -1,0 +1,20 @@
+[
+	{
+		"id": 1,
+		"title": "Grid Demo",
+		"image": null,
+		"desc": "Site to demonstrate using CSS Grid. Made for my fundamental web development class to help demonstrate for students ",
+		"codeURL": "https://github.com/deoclaw/grid-demo",
+		"liveURL": null,
+		"lang": "HTML/CSS"
+	},
+	{
+		"id": 2,
+		"title": "Gradebook Data Generator",
+		"image": null,
+		"desc": "This program prints out a number of fake names and fake numeric grades to create a fake gradebook to automate fake data for an assignment. Runs on command line.",
+		"codeURL": "https://github.com/deoclaw/gdbkdatagen",
+		"liveURL": null,
+		"lang": "Python"
+	}
+]
