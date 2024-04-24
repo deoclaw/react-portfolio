@@ -1,6 +1,16 @@
 [
 	{
 		"id": 1,
+		"title": "Usability Test",
+		"image": "/img/hci-cap.png",
+		"desc": "This is a website built in Astro of a usability study of a local community college website. It features a heuristic evaluation, user personas, usability test, and recommendations based on the test data.",
+		"codeURL": "https://github.com/deoclaw/HCI",
+		"liveURL": "https://deoclaw.github.io/HCI/",
+		"lang": "Astro",
+		"icon": "/xhtml.png"
+	},
+	{
+		"id": 2,
 		"title": "React Portfolio",
 		"image": null,
 		"desc": "A portfolio website done in React. Themed to look like Windows XP, this site features icons that when clicked pop up windows with a description, links to code, and even live previews. You're on it right now!",
@@ -10,7 +20,7 @@
 		"icon": "/emblem-web.png"
 	},
 	{
-		"id": 2,
+		"id": 3,
 		"title": "Gradebook Data Generator",
 		"image": null,
 		"desc": "This program prints out a number of fake names and fake numeric grades to create a fake gradebook to automate fake data for an assignment. Runs on command line.",
@@ -20,7 +30,7 @@
 		"icon": "/python.png"
 	},
 	{
-		"id": 3,
+		"id": 4,
 		"title": "Grid Demo",
 		"image": null,
 		"desc": "Site to demonstrate using CSS Grid. Made for my fundamental web development class to help demonstrate for students ",

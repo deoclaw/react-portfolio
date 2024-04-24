@@ -42,6 +42,22 @@ export default function Window({
 						<h4>{title}</h4>
 
 						<p>{desc}</p>
+						{image !== null ? (
+							<img
+								src={image}
+								alt={title}
+								style={{
+									maxWidth: "50%",
+									margin: "1rem auto",
+									display: "block",
+									border: "1px solid grey",
+									borderRadius: "7px",
+									boxShadow: "offset 0 1px 2px grey",
+								}}
+							/>
+						) : (
+							<p></p>
+						)}
 
 						<section className="field-row" style={{ justifyContent: "center" }}>
 							{codeURL === null ? (
@@ -54,7 +70,9 @@ export default function Window({
 							{liveURL === null ? (
 								<button disabled={true}>Preview</button>
 							) : (
-								<button>Preview</button>
+								<a href={liveURL}>
+									<button>Preview</button>
+								</a>
 							)}
 						</section>
 						<div className="status-bar">

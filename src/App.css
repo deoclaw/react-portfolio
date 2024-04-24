@@ -30,7 +30,9 @@ body {
 	font-size: medium;
 	max-height: 90vh;
 }
-
+.title-bar {
+	padding: 15px 3px;
+}
 .title-bar-text {
 	font-family: "Trebuchet MS", "Allerta", sans-serif;
 	font-size: medium;
