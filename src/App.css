@@ -79,7 +79,7 @@ button:disabled {
 
 #portfolio-container {
 	display: grid;
-	grid-template-columns: min-content auto;
+	grid-template-columns: 1fr 2fr;
 	max-height: 90vh;
 }
 
@@ -87,8 +87,9 @@ button:disabled {
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
-	justify-items: center;
-	align-items: center;
+	justify-items: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
 	text-align: center;
 }
 
