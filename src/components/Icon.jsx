@@ -1,20 +1,27 @@
-export default function Icon({ id, title, icon, url = null }) {
-	function showWindow(id) {
-		const win = document.getElementById(`proj${id}`);
-		win.style.display = "block";
-	}
+import React from "react";
+import { useWindow } from "../context/WindowContext";
+
+export default function Icon({ id, title, icon, url = null, project }) {
+	// function showWindow(id) {
+	// 	const win = document.getElementById(`proj${id}`);
+	// 	win.style.display = "block";
+	// }
+
+	const { showWindow } = useWindow();
+
+	//icon gets project parameter so we can use the fxns from the windowcontext and pass it along to Window?
 
 	return (
-		<figure className="winicon" style={{ maxWidth: "128px" }}>
+		<figure className="winicon">
 			{url === null ? (
 				<img
 					src={icon}
-					onClick={() => showWindow(id)}
-					style={{ maxWidth: "72px", cursor: "pointer" }}
+					onClick={() => showWindow(project)}
+					style={{ cursor: "pointer" }}
 				/>
 			) : (
 				<a href={url}>
-					<img src={icon} style={{ maxWidth: "72px" }} />
+					<img src={icon} />
 				</a>
 			)}
 			<figcaption

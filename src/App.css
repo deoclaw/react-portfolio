@@ -20,6 +20,10 @@ body {
 	overflow: hidden;
 }
 
+#root {
+	overflow: auto;
+}
+
 /* change this to the window -- we'll make a component no worries */
 /* #root > * {
 	margin: 1rem auto;
@@ -82,7 +86,7 @@ button:disabled {
 #icon-container {
 	margin: 0 auto;
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
 	justify-items: center;
 	align-items: center;
 	text-align: center;
@@ -91,4 +95,29 @@ button:disabled {
 .winicon figcaption {
 	margin: 0 auto 10px auto;
 	font-size: 1rem;
+}
+
+.winicon img {
+	max-width: 48px;
+}
+
+@media screen and (min-width: 900px) {
+	.winicon img {
+		max-width: 72px;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	#portfolio-container {
+		grid-template-columns: 1fr;
+	}
+	#icon-container {
+		order: 1;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.winicon figcaption {
+		font-size: 0.75rem;
+	}
 }
