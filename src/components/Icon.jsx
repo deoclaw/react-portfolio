@@ -1,7 +1,14 @@
 import React from "react";
 import { useWindow } from "../context/WindowContext";
 
-export default function Icon({ id, title, icon, url = null, project }) {
+export default function Icon({
+	id,
+	title,
+	icon,
+	url = null,
+	event = null,
+	project,
+}) {
 	// function showWindow(id) {
 	// 	const win = document.getElementById(`proj${id}`);
 	// 	win.style.display = "block";
@@ -13,12 +20,14 @@ export default function Icon({ id, title, icon, url = null, project }) {
 
 	return (
 		<figure className="winicon">
-			{url === null ? (
+			{url === null && event === null ? (
 				<img
 					src={icon}
 					onClick={() => showWindow(project)}
 					style={{ cursor: "pointer" }}
 				/>
+			) : event !== null ? (
+				<img src={icon} onClick={event} style={{ cursor: "pointer" }} />
 			) : (
 				<a href={url}>
 					<img src={icon} />

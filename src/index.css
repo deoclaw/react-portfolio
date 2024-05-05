@@ -1,12 +1,11 @@
 /* @import url("https://unpkg.com/xp.css"); */
 @import url("https://unpkg.com/xp.css");
-
+@import url("./xp.css");
 /* body {
 	margin: 0 auto;
 	min-width: 320px;
 	min-height: 100vh;
 } */
-
 /*  inspo from faisalAkhtar at github*/
 footer {
 	background-color: #245edc;
