@@ -1,14 +1,8 @@
 import React from "react";
 import projects from "../data/projects.json";
 import Icon from "../components/Icon";
-import { useNavigate } from "react-router-dom";
 
 export default function IconContainer() {
-	let navigate = useNavigate();
-	const blogRoute = () => {
-		let path = `/blog`;
-		navigate(`/blog`);
-	};
 	return (
 		<div id="icon-container">
 			<Icon
@@ -30,7 +24,7 @@ export default function IconContainer() {
 				id="blogicon"
 				title="My Computer"
 				icon="/folder_home.png"
-				event={blogRoute}
+				url="/blog"
 			/>
 		</div>
 	);

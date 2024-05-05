@@ -1,5 +1,6 @@
 import React from "react";
 import { useWindow } from "../context/WindowContext";
+import { NavLink } from "react-router-dom";
 
 export default function IconInWindow({
 	id,
@@ -29,9 +30,9 @@ export default function IconInWindow({
 			) : event !== null ? (
 				<img src={icon} onClick={event} style={{ cursor: "pointer" }} />
 			) : (
-				<a href={url}>
+				<NavLink to={url}>
 					<img src={icon} />
-				</a>
+				</NavLink>
 			)}
 			<figcaption
 				style={{

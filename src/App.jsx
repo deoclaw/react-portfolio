@@ -4,7 +4,9 @@ import { useState } from "react";
 import "./App.css";
 import Portfolio from "./pages/Portfolio";
 import Blog from "./pages/Blog";
+
 import { WindowContextProvider } from "./context/WindowContext";
+import BlogPost from "./components/BlogPost";
 
 function App() {
 	return (
@@ -12,7 +14,7 @@ function App() {
 			<Routes>
 				<Route path="/" element={<Portfolio />} />
 				<Route path="/blog" element={<Blog />} />
-				<Route path="/blog/:slug" />
+				<Route path="/posts/:slug" element={<BlogPost />} />
 			</Routes>
 		</WindowContextProvider>
 	);

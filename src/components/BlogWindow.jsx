@@ -1,16 +1,10 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, NavLink } from "react-router-dom";
 import Icon from "./Icon";
 import IconInWindow from "./IconInWindow";
 import blogposts from "../data/blogposts.json";
 
 export default function BlogWindow() {
-	let navigate = useNavigate();
-	const routeChange = () => {
-		let path = `/`;
-		navigate(path);
-	};
-
 	//i'd like to fill it with blog icons that when clicked pull the user into the specific blog post windside a similar blog window base (so blog window should be ap arent component with children?)
 
 	//i feel like i'm starting to get ah ang of react but a lot of the states i don't grok
@@ -18,7 +12,7 @@ export default function BlogWindow() {
 	return (
 		<>
 			<div
-				class="window"
+				className="window"
 				style={{
 					maxWidth: "100%",
 					height: "75vh",
@@ -26,19 +20,17 @@ export default function BlogWindow() {
 					backgroundColor: "white",
 				}}
 			>
-				<div class="title-bar">
-					<div class="title-bar-text">Blog</div>
-					<div class="title-bar-controls">
+				<div className="title-bar">
+					<div className="title-bar-text">Blog</div>
+					<div className="title-bar-controls">
 						<button aria-label="Minimize"></button>
 						<button aria-label="Maximize"></button>
-						<button
-							aria-label="Close"
-							onClick={routeChange}
-							style={{ cursor: "pointer" }}
-						></button>
+						<NavLink to="/">
+							<button aria-label="Close" style={{ cursor: "pointer" }}></button>
+						</NavLink>
 					</div>
 				</div>
-				<div class="window-body">
+				<div className="window-body">
 					<p style={{ textAlign: "center", margin: "1rem" }}>
 						Click on a blog post to read more (or click X to go back!)
 					</p>
@@ -48,6 +40,7 @@ export default function BlogWindow() {
 								key={post.slug}
 								id={post.slug}
 								title={post.title}
+								url={`../posts/${post.slug}`}
 								icon="/abiword.png"
 							/>
 						))}
