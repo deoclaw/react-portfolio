@@ -1,0 +1,23 @@
+[
+	{
+		"title": "My first blog post",
+		"desc": "My first blog post",
+		"image": "/hci-cap.png",
+		"slug": "my-first-blog-post",
+		"body": "<p>This is my first blog post!</p><p>I am writing in JSON</p>"
+	},
+	{
+		"title": "My second blog post",
+		"desc": "My second ever blog post",
+		"image": null,
+		"slug": "my-second-blog-post",
+		"body": "<p>This is my second blog post!</p><p>I am writing paragraph elements in JSON still which feels counterintuitive. Oh well.</p>"
+	},
+	{
+		"title": "My latest blog post",
+		"desc": "My latest blog post",
+		"image": "/hci-cap.png",
+		"slug": "my-latest-blog-post",
+		"body": "<p>This is my latest blog post!</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices enim sed erat tempor sodales. Quisque bibendum quis erat at venenatis. Suspendisse vitae dignissim diam. In hac habitasse platea dictumst. Morbi magna felis, euismod vel odio sit amet, pharetra laoreet augue. Sed porttitor ultrices nibh ac vehicula. Morbi hendrerit eget ipsum eu luctus. Proin urna nisl, luctus vitae elit nec, dignissim fermentum sapien. Cras at aliquet leo. Donec tempor semper finibus. Pellentesque suscipit, libero vel sagittis auctor, dolor nibh cursus justo, eget iaculis quam neque eget justo. Suspendisse hendrerit eget arcu sed vulputate. Duis tincidunt lectus a feugiat consectetur. Fusce laoreet dictum lacus. Nullam quam ex, blandit eu erat sed, maximus ultricies diam.</p><p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris lobortis commodo ex, id gravida arcu dictum eget. Donec sed pharetra sapien. Suspendisse nec eros hendrerit, luctus leo non, dignissim ligula. Morbi et ultricies mauris. Vivamus purus nisi, molestie eu consectetur quis, cursus eu neque. Aenean libero elit, molestie nec leo vel, tempor sagittis elit. </p><p>Nam vestibulum commodo orci ut maximus. Pellentesque ut massa est. Proin id ullamcorper lectus. Quisque et laoreet justo. Donec in ligula non lorem semper fermentum. Nunc leo diam, elementum ac suscipit feugiat, condimentum sed dolor. Nam sapien lacus, porttitor id nunc vel, convallis sagittis metus. Phasellus ultricies diam sit amet leo porttitor tincidunt. Ut laoreet ullamcorper dignissim. In id malesuada mauris. Nulla ac mattis mauris. </p><p>Phasellus sollicitudin nunc sapien, sit amet accumsan ex ornare vitae. Integer viverra faucibus pretium. Donec egestas urna sit amet ipsum volutpat, at euismod lorem congue. Nulla pharetra augue a lectus mattis volutpat in vitae est. Maecenas fringilla urna at dapibus varius. Donec vel varius est. Maecenas quis molestie lacus. Vivamus finibus, nisl et dapibus mollis, nisl metus aliquet leo, sit amet imperdiet arcu erat at lacus.</p><p>Nunc sem neque, gravida vitae quam ac, laoreet posuere dolor. Nulla in fermentum quam. Mauris placerat arcu vel justo pellentesque, at gravida nulla ornare. Donec a efficitur arcu. Etiam finibus, lacus vitae dictum egestas, sem risus venenatis diam, sit amet commodo lorem eros ut neque. Aliquam ac consequat tellus. Cras varius maximus orci vitae rhoncus. Donec tincidunt lorem eget metus sollicitudin, sed pretium erat ultrices. Etiam dictum rutrum hendrerit. Curabitur hendrerit suscipit risus in blandit. Nulla efficitur quis metus sit amet aliquam. Curabitur fermentum ligula eget lectus rutrum ullamcorper. </p>"
+	}
+]

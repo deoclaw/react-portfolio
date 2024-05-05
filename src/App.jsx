@@ -12,6 +12,7 @@ function App() {
 			<Routes>
 				<Route path="/" element={<Portfolio />} />
 				<Route path="/blog" element={<Blog />} />
+				<Route path="/blog/:slug" />
 			</Routes>
 		</WindowContextProvider>
 	);

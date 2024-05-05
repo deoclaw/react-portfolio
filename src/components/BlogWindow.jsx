@@ -1,6 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import Icon from "./Icon";
+import IconInWindow from "./IconInWindow";
+import blogposts from "../data/blogposts.json";
 
 export default function BlogWindow() {
 	let navigate = useNavigate();
@@ -25,7 +27,7 @@ export default function BlogWindow() {
 				}}
 			>
 				<div class="title-bar">
-					<div class="title-bar-text">A Window With Stuff In It</div>
+					<div class="title-bar-text">Blog</div>
 					<div class="title-bar-controls">
 						<button aria-label="Minimize"></button>
 						<button aria-label="Maximize"></button>
@@ -37,7 +39,19 @@ export default function BlogWindow() {
 					</div>
 				</div>
 				<div class="window-body">
-					<Icon title="test" icon="/folder_home.png" />
+					<p style={{ textAlign: "center", margin: "1rem" }}>
+						Click on a blog post to read more (or click X to go back!)
+					</p>
+					<div id="icon-container">
+						{blogposts.map((post) => (
+							<IconInWindow
+								key={post.slug}
+								id={post.slug}
+								title={post.title}
+								icon="/abiword.png"
+							/>
+						))}
+					</div>
 				</div>
 			</div>
 		</>
