@@ -24,7 +24,9 @@ export default function BlogPost() {
 				key={newPost[0].slug}
 			>
 				<div className="title-bar">
-					<div className="title-bar-text">{newPost[0].title}</div>
+					<div className="title-bar-text" id="blogpost-titlebar-text">
+						{newPost[0].title}
+					</div>
 					<div className="title-bar-controls">
 						<button aria-label="Minimize"></button>
 						<button aria-label="Maximize"></button>
@@ -39,6 +41,21 @@ export default function BlogPost() {
 					style={{ maxHeight: "85vh", overflowY: "auto" }}
 				>
 					<div style={{ margin: "1rem" }} className="blogPostBody">
+						{newPost[0].image ? (
+							<img
+								src={newPost[0].image}
+								style={{
+									maxWidth: "50%",
+									margin: "1rem auto",
+									display: "block",
+									border: "1px solid grey",
+									borderRadius: "7px",
+									boxShadow: "offset 0 1px 2px grey",
+								}}
+							/>
+						) : (
+							<div></div>
+						)}
 						{
 							//found this on stack overflow: https://stackoverflow.com/questions/35351706/how-to-render-a-multi-line-text-string-in-react
 							newPost[0].body.split("\n").map((i, key) => {

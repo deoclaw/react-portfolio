@@ -4,7 +4,13 @@ import { useWindow } from "../context/WindowContext";
 import {
 	collection,
 	addDoc,
+	serverTimestamp,
 } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore.js";
+import {
+	getAuth,
+	signInAnonymously,
+	onAuthStateChanged,
+} from "https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js";
 
 import { db } from "../firestore";
 
@@ -14,6 +20,33 @@ export default function ContactForm({
 
 	display,
 }) {
+	let uid = null;
+	const auth = getAuth();
+	signInAnonymously(auth)
+		.then(() => {
+			// Signed in..
+			const userDoc = addDoc(collection(db, "users"), {
+				uid: auth.user.uid,
+			});
+			console.log("Logged in: ", userDoc.uid);
+		})
+		.catch((error) => {
+			const errorCode = error.code;
+			const errorMessage = error.message;
+			// ...
+		});
+	onAuthStateChanged(auth, (user) => {
+		if (user) {
+			// User is signed in, see docs for a list of available properties
+			// https://firebase.google.com/docs/reference/js/auth.user
+			uid = user.uid;
+			// ...
+		} else {
+			// User is signed out
+			// ...
+		}
+	});
+
 	const { hideWindow } = useWindow();
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
@@ -51,6 +84,8 @@ export default function ContactForm({
 				contactName: name,
 				contactEmail: email,
 				contactMsg: msg,
+				user: uid,
+				timestamp: serverTimestamp(),
 			});
 			console.log("Contact logged with ID: ", docRef.id);
 		} catch (e) {

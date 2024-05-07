@@ -48,5 +48,25 @@
 		"liveURL": null,
 		"lang": "HTML/CSS",
 		"icon": "/emblem-web.png"
+	},
+	{
+		"id": 5,
+		"title": "Famous Quotes REST API",
+		"image": null,
+		"desc": "This is a quotes REST API using PHP and PostgreSQL",
+		"codeURL": "https://github.com/deoclaw/PHP_RestAPI_Quotes",
+		"liveURL": null,
+		"lang": "PHP",
+		"icon": "/phppg.png"
+	},
+	{
+		"id": 6,
+		"title": "States REST API",
+		"image": null,
+		"desc": "A RESTful API created in Node with Express and MongoDB for a final project using US state data.",
+		"codeURL": "https://github.com/deoclaw/node-states",
+		"liveURL": "https://node-states.onrender.com",
+		"lang": "Node",
+		"icon": "/utilities-terminal.png"
 	}
 ]

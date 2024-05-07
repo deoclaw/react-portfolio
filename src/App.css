@@ -46,7 +46,8 @@ body {
 	text-overflow: ellipsis;
 }
 
-#contact-title-bar {
+#contact-title-bar,
+#blogpost-titlebar-text {
 	max-width: 500px;
 }
 

@@ -2,22 +2,22 @@
 	{
 		"title": "My first blog post",
 		"desc": "My first blog post",
-		"image": "/hci-cap.png",
+		"image": null,
 		"slug": "my-first-blog-post",
-		"body": "This is my first blog post!\nI am writing in JSON\n"
+		"body": "This is my first blog post!\nReact does not seem well suited to content-heavy sites.\n"
 	},
 	{
-		"title": "My second blog post",
+		"title": "Rendering multi-line strings in react",
 		"desc": "My second ever blog post",
 		"image": null,
-		"slug": "my-second-blog-post",
-		"body": "This is my second blog post!\nI am writing paragraph elements in JSON still which feels counterintuitive. Oh well.\n"
+		"slug": "react-multi-line",
+		"body": "I found this on stack overflow when trying to figure out how to render multi-line strings in react: \nhttps://stackoverflow.com/questions/35351706/how-to-render-a-multi-line-text-string-in-react\nThis seems insane. The fact I am writing blog posts in JSON is insane. Honestly, for what I'm trying to do here, React does not seem useful. Astro would likely be a better bet."
 	},
 	{
-		"title": "My latest blog post",
-		"desc": "My latest blog post",
-		"image": "/hci-cap.png",
-		"slug": "my-latest-blog-post",
-		"body": "This is my latest blog post!\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices enim sed erat tempor sodales. Quisque bibendum quis erat at venenatis. Suspendisse vitae dignissim diam. In hac habitasse platea dictumst. Morbi magna felis, euismod vel odio sit amet, pharetra laoreet augue. Sed porttitor ultrices nibh ac vehicula. Morbi hendrerit eget ipsum eu luctus. Proin urna nisl, luctus vitae elit nec, dignissim fermentum sapien. Cras at aliquet leo. Donec tempor semper finibus. Pellentesque suscipit, libero vel sagittis auctor, dolor nibh cursus justo, eget iaculis quam neque eget justo. Suspendisse hendrerit eget arcu sed vulputate. Duis tincidunt lectus a feugiat consectetur. Fusce laoreet dictum lacus. Nullam quam ex, blandit eu erat sed, maximus ultricies diam.\nVestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris lobortis commodo ex, id gravida arcu dictum eget. Donec sed pharetra sapien. Suspendisse nec eros hendrerit, luctus leo non, dignissim ligula. Morbi et ultricies mauris. Vivamus purus nisi, molestie eu consectetur quis, cursus eu neque. Aenean libero elit, molestie nec leo vel, tempor sagittis elit. \nNam vestibulum commodo orci ut maximus. Pellentesque ut massa est. Proin id ullamcorper lectus. Quisque et laoreet justo. Donec in ligula non lorem semper fermentum. Nunc leo diam, elementum ac suscipit feugiat, condimentum sed dolor. Nam sapien lacus, porttitor id nunc vel, convallis sagittis metus. Phasellus ultricies diam sit amet leo porttitor tincidunt. Ut laoreet ullamcorper dignissim. In id malesuada mauris. Nulla ac mattis mauris. \nPhasellus sollicitudin nunc sapien, sit amet accumsan ex ornare vitae. Integer viverra faucibus pretium. Donec egestas urna sit amet ipsum volutpat, at euismod lorem congue. Nulla pharetra augue a lectus mattis volutpat in vitae est. Maecenas fringilla urna at dapibus varius. Donec vel varius est. Maecenas quis molestie lacus. Vivamus finibus, nisl et dapibus mollis, nisl metus aliquet leo, sit amet imperdiet arcu erat at lacus.\nNunc sem neque, gravida vitae quam ac, laoreet posuere dolor. Nulla in fermentum quam. Mauris placerat arcu vel justo pellentesque, at gravida nulla ornare. Donec a efficitur arcu. Etiam finibus, lacus vitae dictum egestas, sem risus venenatis diam, sit amet commodo lorem eros ut neque. Aliquam ac consequat tellus. Cras varius maximus orci vitae rhoncus. Donec tincidunt lorem eget metus sollicitudin, sed pretium erat ultrices. Etiam dictum rutrum hendrerit. Curabitur hendrerit suscipit risus in blandit. Nulla efficitur quis metus sit amet aliquam. Curabitur fermentum ligula eget lectus rutrum ullamcorper. \n"
+		"title": "Deploying firestore to my app",
+		"desc": "God I hate firestore",
+		"image": "/img/firestore.png",
+		"slug": "deploy-firestore",
+		"body": "In this blog post, I'll discuss the latest update to this portfolio: deploying firestore as a contact handler!\n I was able to use firestore as a way of collecting contact data from my contact form. As a test, this worked well, as shown by the above screencap. I was even able to use anonymous authentication. However, a concern remains regarding malicious writes -- while I santized all form inputs, I am still wary about spam writes that would eat bandwidth. In researching ways to mitigate this, it essentially required stronger authentication options, which I, frankly, do not have the time to implement. Therefore, I have set my security rules to essentially deny all writes. \n In all honesty, if I were to go truly live with this (rather than as a simple github page for proof of concept), I'd use Netlify to host it since Netlify provides a form handler and spam filter."
 	}
 ]
