@@ -102,6 +102,18 @@ button:disabled {
 	max-width: 48px;
 }
 
+#blogBody {
+	overflow: auto;
+}
+
+.blogPostBody {
+	overflow-y: auto;
+}
+
+.blogPostBody p {
+	margin: 1.5rem 1rem;
+}
+
 @media screen and (min-width: 900px) {
 	.winicon img {
 		max-width: 72px;
