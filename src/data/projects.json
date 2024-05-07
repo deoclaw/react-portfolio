@@ -1,5 +1,15 @@
 [
 	{
+		"id": "contact",
+		"title": "Contact",
+		"image": null,
+		"desc": "Contact form",
+		"codeURL": null,
+		"liveURL": null,
+		"lang": null,
+		"icon": "/emblem-mail.png"
+	},
+	{
 		"id": 1,
 		"title": "Usability Test",
 		"image": "/img/hci-cap.png",

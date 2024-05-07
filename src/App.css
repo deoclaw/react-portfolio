@@ -46,6 +46,10 @@ body {
 	text-overflow: ellipsis;
 }
 
+#contact-title-bar {
+	max-width: 500px;
+}
+
 h4 {
 	margin: 0.5rem 1rem;
 }
@@ -67,6 +71,10 @@ p {
 .window-body button {
 	font-size: medium;
 	margin: 1rem 0.25rem;
+}
+
+.window-body label {
+	font-size: medium;
 }
 
 button {

@@ -35,6 +35,11 @@ export function WindowContextProvider({ children }) {
 		setWindowOpen(true);
 	}
 
+	// function sendMessage() {
+	// 	const wintitle = document.getElementById("contact-title-bar");
+	// 	wintitle.innerText = "Sent! You may now close the window.";
+	// }
+
 	return (
 		<WindowContext.Provider
 			value={{ hideWindow, showWindow, isWindowOpen, winItem }}
