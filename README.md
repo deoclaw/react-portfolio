@@ -9,9 +9,13 @@ Users can also read a blog and use a form to send messages (connects to Firestor
 ## Technologies Used
 
 :white_check_mark: React
+
 :white_check_mark: npm
+
 :white_check_mark: [XP.css](https://botoxparty.github.io/XP.css/)
+
 :white_check_mark: Cloud Firestore
+
 :white_check_mark: Firebase authentication
 
 ## To Run
