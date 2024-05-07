@@ -4,7 +4,7 @@ A portfolio website done in React. Themed to look like Windows XP, this site fea
 
 Users can also read a blog and use a form to send messages (connects to Firestore.) Users authenticate anonymously. It also features a working clock.
 
-[Live Preview]()
+[Live Preview on Render](https://react-portfolio-m7en.onrender.com)
 
 ## Technologies Used
 
@@ -27,6 +27,8 @@ Users can also read a blog and use a form to send messages (connects to Firestor
 5. Run the app with `npm run dev`
 
 _Note - you must be connected to the internet for this to work properly!_
+
+Or view on [Render](https://react-portfolio-m7en.onrender.com) (because GitHub pages kept building wrong!)
 
 ## Takeaways
 
