@@ -7,7 +7,7 @@ clock.textContent = new Intl.DateTimeFormat("en-US", {
 	hour12: true,
 }).format(new Date());
 
-const setTime = setInterval(() => {
+export const setTime = setInterval(() => {
 	clock.textContent = new Intl.DateTimeFormat("en-US", {
 		hour: "numeric",
 		minute: "numeric",
