@@ -1,6 +1,12 @@
 import React from "react";
 import { useState } from "react";
 import { useWindow } from "../context/WindowContext";
+import {
+	collection,
+	addDoc,
+} from "https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore.js";
+
+import { db } from "../firestore";
 
 export default function ContactForm({
 	id,
@@ -8,13 +14,6 @@ export default function ContactForm({
 
 	display,
 }) {
-	// function hideWindow(id) {
-	// 	const win = document.getElementById(`proj${id}`);
-	// 	win.style.display = "none";
-	// }
-
-	// could this become a context? [isShown, setShow] and then...get the id of whatever we're clicking on? and then call it here AND in my icons -- which i need to make...and maybe store icon data in the json? or do a check -- if lang is x show y else...or i can shove in the json
-
 	const { hideWindow } = useWindow();
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
@@ -36,7 +35,7 @@ export default function ContactForm({
 		}
 	}
 
-	function handleSubmit(e) {
+	const handleSubmit = async (e) => {
 		e.preventDefault();
 		if (name === "" || email === "" || msg === "") {
 			alert("Must not be empty!");
@@ -47,7 +46,17 @@ export default function ContactForm({
 			const wintitle = document.getElementById("contact-title-bar");
 			wintitle.innerText = "Sent! You may now close the window.";
 		}
-	}
+		try {
+			const docRef = await addDoc(collection(db, "contacts"), {
+				contactName: name,
+				contactEmail: email,
+				contactMsg: msg,
+			});
+			console.log("Contact logged with ID: ", docRef.id);
+		} catch (e) {
+			console.error("Error adding document: ", e);
+		}
+	};
 
 	return (
 		<>
